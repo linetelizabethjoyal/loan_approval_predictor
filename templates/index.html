@@ -91,9 +91,9 @@
                             id="person_home_ownership">
 
                         <option value="0">Mortgage</option>
-                        <option value="1">Own</option>
-                        <option value="2">Rent</option>
-                        <option value="3">Other</option>
+                        <option value="1">Other</option>
+                        <option value="2">Own</option>
+                        <option value="3">Rent</option>
 
                     </select>
                 </div>
@@ -182,8 +182,6 @@ document.getElementById("predictForm")
         loan_amnt: loan,
         loan_int_rate: rate,
 
-        loan_percent_income: loan / income,
-
         cb_person_default_on_file: 0,
         cb_person_cred_hist_length: cred,
 
@@ -191,19 +189,8 @@ document.getElementById("predictForm")
         loan_intent_HOMEIMPROVEMENT: 0,
         loan_intent_MEDICAL: 0,
         loan_intent_PERSONAL: 1,
-        loan_intent_VENTURE: 0,
+        loan_intent_VENTURE: 0
 
-        loan_to_income_ratio: loan / income,
-        financial_burden: loan * rate,
-        income_per_year_emp: income / emp,
-        cred_hist_to_age_ratio: cred / age,
-        int_to_loan_ratio: rate / loan,
-        loan_int_emp_interaction: loan * emp,
-        debt_to_credit_ratio: loan / cred,
-        int_to_cred_hist: rate / cred,
-        int_per_year_emp: rate / emp,
-        loan_amt_per_emp_year: loan / emp,
-        income_to_loan_ratio: income / loan
     };
 
     const response =
